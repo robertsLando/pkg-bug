@@ -1,0 +1,30 @@
+{
+  "name": "pkg-bug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "app": "index.js"
+  },
+  "scripts": {
+    "package": "pkg . --no-native-build -t node16-linux-x64"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "pkg": "^5.8.1"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "get-port": "^5.1.1",
+    "sharp": "^0.32.2"
+  },
+  "pkg": {
+    "scripts": [],
+    "assets": [
+      "../../node_modules/sharp/build/Release/**",
+      "../../node_modules/sharp/vendor/**"
+    ],
+    "patches": {}
+  }
+}
